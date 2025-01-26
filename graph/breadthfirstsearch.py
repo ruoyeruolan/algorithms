@@ -19,6 +19,13 @@ class BreadthFirstSearch:
         self.start = start
     
     def bfs(self):
+        """
+        Breadth First Search, traverse the graph through the breadth-first search algorithm.
+
+        Returns
+        -------
+            
+        """
         visited = set()
         queue = deque(self.graph.keys())
         while queue:
@@ -28,3 +35,7 @@ class BreadthFirstSearch:
                 queue.extend(unvisited)
                 visited.update(unvisited)
         return visited
+    
+    def bfs4path(self, start: int, end: int) -> List[int]:
+        pass
+    
